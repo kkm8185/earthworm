@@ -14,3 +14,11 @@
  - map.txt : 파일 읽어, map 생성
  - worm.c : 지렁이 키우기 게임의 핵심 코드
  
+
+### 2013이상에서는 몇가지 코드를 수정해야 합니다. ###
+
+- getch()의 경우, _getch()로 수정해야 합니다.
+- khbit()의 경우, _khbit()로 수정해야 합니다.
+- fopen()의 경우, fopen_s()로 수정해야 합니다.
+	- ex) fd = fopen("map.txt","r') -> fopen_s(&fd,동일)
+	
